@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="STATE" org.eventb.core.type="ℙ(STATE)"/>
+        <org.eventb.core.poIdentifier name="EVENT" org.eventb.core.type="ℙ(EVENT)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="Mch_VARIANT_One_Ev/Op-WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Operator Well-Definedness Preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poPredicateSet#ABSHYP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m⦂Machine(STATE,EVENT),e⦂EVENT,s⦂STATE·(Variant_WellCons(m)⇒e∈Progress(m))∧(Variant_WellCons(m)∧Mch_INV_One_Ev(m,e)∧e∈Progress(m)∧e∈Convergent(m)∧s∈Inv(m)∧s∈Grd(m)[{e}])⇒(∀sp⦂STATE·sp∈BAP(m)[{e}][{s}]⇒s∈dom(Inv(m) ◁ Variant(m))∧Inv(m) ◁ Variant(m)∈STATE ⇸ ℤ∧sp∈dom(Inv(m) ◁ Variant(m)))" org.eventb.core.source="/EB4EBCore2/EvtBPO.tuf|org.eventb.theory.core.theoryRoot#EvtBPO|org.eventb.theory.core.newOperatorDefinition#element8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/EB4EBCore2/EvtBPO.tcf|org.eventb.theory.core.scTheoryRoot#EvtBPO|org.eventb.theory.core.scNewOperatorDefinition#STATM"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/EB4EBCore2/EvtBPO.tuf|org.eventb.theory.core.theoryRoot#EvtBPO|org.eventb.theory.core.newOperatorDefinition#element8"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poSequent#Mch_VARIANT_One_Ev\/Op-WD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Mch_VARIANT/Op-WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Operator Well-Definedness Preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poPredicateSet#ABSHYP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m⦂Machine(STATE,EVENT)·Variant_WellCons(m)∧Mch_INV(m)∧BAP_WellCons(m)∧Tag_Event_WellCons(m)∧Event_WellCons(m)⇒(∀e⦂EVENT,s⦂STATE·e∈Event(m)∧e∈Convergent(m)∧s∈State(m)∧s∈Inv(m)∧s∈Grd(m)[{e}]⇒Variant_WellCons(m)∧Mch_INV_One_Ev(m,e)∧e∈Progress(m))" org.eventb.core.source="/EB4EBCore2/EvtBPO.tuf|org.eventb.theory.core.theoryRoot#EvtBPO|org.eventb.theory.core.newOperatorDefinition#element9"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/EB4EBCore2/EvtBPO.tcf|org.eventb.theory.core.scTheoryRoot#EvtBPO|org.eventb.theory.core.scNewOperatorDefinition#STATN"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/EB4EBCore2/EvtBPO.tuf|org.eventb.theory.core.theoryRoot#EvtBPO|org.eventb.theory.core.newOperatorDefinition#element9"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poSequent#Mch_VARIANT\/Op-WD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="check_Machine_Consistency/Op-WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Operator Well-Definedness Preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poPredicateSet#ABSHYP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀m⦂Machine(STATE,EVENT)·Machine_WellCons(m)⇒(Mch_THM(m)∧Mch_INV(m)∧Mch_FIS(m)∧Mch_NAT(m)⇒Variant_WellCons(m)∧BAP_WellCons(m)∧Tag_Event_WellCons(m)∧Event_WellCons(m))" org.eventb.core.source="/EB4EBCore2/EvtBPO.tuf|org.eventb.theory.core.theoryRoot#EvtBPO|org.eventb.theory.core.newOperatorDefinition#element12"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/EB4EBCore2/EvtBPO.tcf|org.eventb.theory.core.scTheoryRoot#EvtBPO|org.eventb.theory.core.scNewOperatorDefinition#STATQ"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/EB4EBCore2/EvtBPO.tuf|org.eventb.theory.core.theoryRoot#EvtBPO|org.eventb.theory.core.newOperatorDefinition#element12"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/EB4EBCore2/EvtBPO.bpo|org.eventb.core.poFile#EvtBPO|org.eventb.core.poSequent#check_Machine_Consistency\/Op-WD|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+</org.eventb.core.poFile>
