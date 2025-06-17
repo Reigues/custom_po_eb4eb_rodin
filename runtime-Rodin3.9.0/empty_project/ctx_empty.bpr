@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.prFile version="1">
-    <org.eventb.core.prProof name="axm15/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="p0" org.eventb.core.prSets="Ev">
+    <org.eventb.core.prProof name="axm16/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prHyps="p0" org.eventb.core.prSets="St">
         <org.eventb.core.lang name="L">
             <org.eventb.theory.core.scDatatypeDefinition name="Machine">
                 <org.eventb.theory.core.scTypeArgument name="STATE" org.eventb.theory.core.givenType="STATE"/>
@@ -102,102 +102,80 @@
                 <org.eventb.theory.core.scDatatypeConstructor name="Nil"/>
             </org.eventb.theory.core.scDatatypeDefinition>
         </org.eventb.core.lang>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Ev,{INITIALISATION},{evt1},{evt2}))" org.eventb.core.prHyps="">
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Ev,{INITIALISATION}))" org.eventb.core.prHyps="">
             <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
-                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2"/>
                 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
                     <org.eventb.core.prAnte name="'">
-                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
-                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
-                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="remove ¬ in ¬(∀a,b·¬(a∈ℕ∧b∈ℕ))" org.eventb.core.prHyps="">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
                             <org.eventb.core.prAnte name="'">
-                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
-                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12"/>
-                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="remove ¬ in ¬¬([[1]]∈ℕ∧[[0]]∈ℕ)" org.eventb.core.prHyps="">
-                                    <org.eventb.core.prAnte name="'">
-                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
-                                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p13"/>
-                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-                                            <org.eventb.core.prAnte name="'">
-                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
-                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with Init(mch)=INITIALISATION" org.eventb.core.prHyps="p0">
-                                                    <org.eventb.core.prAnte name="'">
-                                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p16"/>
-                                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p17"/>
-                                                        <org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p18"/>
-                                                        <org.eventb.core.prHypAction name="FORWARD_INF3" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p19"/>
-                                                        <org.eventb.core.prHypAction name="DESELECT4" org.eventb.core.prHyps="p15,p2,p3,p4"/>
-                                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p0"/>
-                                                    </org.eventb.core.prAnte>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1.3.2.2"/>
-                                </org.eventb.core.prRule>
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊥ hyp" org.eventb.core.prHyps="p11"/>
                             </org.eventb.core.prAnte>
-                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1.3.2"/>
                         </org.eventb.core.prRule>
                     </org.eventb.core.prAnte>
                 </org.eventb.core.prRule>
             </org.eventb.core.prAnte>
             <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
         </org.eventb.core.prRule>
-        <org.eventb.core.prIdent name="INITIALISATION" org.eventb.core.type="Ev"/>
-        <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(ℙ(ℤ×ℤ)×List(ℤ)×ℤ,Ev)"/>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="AP(mch)={var3p⦂ℙ(ℤ×ℤ),var2p⦂List(ℤ),var1p⦂ℤ·var1p=5∧var2p=(Nil ⦂ List(ℤ)) ∣ var3p ↦ var2p ↦ var1p}"/>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Thm(mch)=ℙ(ℤ × ℤ) × List(ℤ) × ℤ"/>
-        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="Ev={Init(mch),evt1,evt2}">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="BAP(mch)={e⦂Ev×(St×St)·⊤ ∣ e}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ordinary(mch)={Init(mch),evt1}">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Grd(mch)={e⦂Ev×St·⊤ ∣ e}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Inv(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·var1∈ℕ∧var2∈List(ℕ)∧{a⦂ℤ,b⦂ℤ·a∈ℕ∧b∈ℕ ∣ a ↦ a+b}≠(∅ ⦂ ℙ(ℤ×ℤ)) ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Inv(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·var1∈ℕ∧var2∈List(ℕ)∧¬(∀a⦂ℤ,b⦂ℤ·¬(a∈ℕ∧b∈ℕ)) ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Ev,{INITIALISATION},{evt1},{evt2})">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="mch∈Machine(St,Ev)">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬INITIALISATION=evt2">
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Ev,{INITIALISATION})">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="INITIALISATION" org.eventb.core.type="Ev"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Inv(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·var1∈ℕ∧var2∈List(ℕ)∧(∃a⦂ℤ,b⦂ℤ·a∈ℕ∧b∈ℕ) ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬Init(mch)=evt2">
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ev={INITIALISATION}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="INITIALISATION" org.eventb.core.type="Ev"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="mch∈Machine(ℙ(ℤ × ℤ) × List(ℤ) × ℤ,Ev)"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ev={INITIALISATION,evt1,evt2}">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Convergent(mch)=(∅ ⦂ ℙ(Ev))">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Inv(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·var1∈ℕ∧var2∈List(ℕ)∧(∃a⦂ℤ,b⦂ℤ·¬¬(a∈ℕ∧b∈ℕ)) ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Ordinary(mch)={INITIALISATION,evt1}">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="Grd(mch)=Ev × St">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬evt1=evt2">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Progress(mch)=(∅ ⦂ ℙ(Ev))">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="AP(mch)={var3p⦂ℙ(ℤ×ℤ),var2p⦂List(ℤ),var1p⦂ℤ·var1p=5∧var2p=(Nil ⦂ List(ℤ))∧⊤ ∣ var3p ↦ var2p ↦ var1p}"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="Thm(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·1=1 ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Init(mch)=evt1">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="St=(∅ ⦂ ℙ(St))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BAP(mch)=Ev × (St × St)">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬INITIALISATION=evt1">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Convergent(mch)={}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Init(mch)=INITIALISATION"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Progress(mch)={}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.heL2:1"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.rn"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.falseHyp"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="axm15/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="p0" org.eventb.core.prSets="Ev">
+    <org.eventb.core.prProof name="axm16/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prHyps="p0" org.eventb.core.prSets="St">
         <org.eventb.core.lang name="L">
             <org.eventb.theory.core.scDatatypeDefinition name="Machine">
                 <org.eventb.theory.core.scTypeArgument name="STATE" org.eventb.theory.core.givenType="STATE"/>
@@ -299,99 +277,77 @@
                 <org.eventb.theory.core.scDatatypeConstructor name="Nil"/>
             </org.eventb.theory.core.scDatatypeDefinition>
         </org.eventb.core.lang>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Ev,{INITIALISATION},{evt1},{evt2}))" org.eventb.core.prHyps="">
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Ev,{INITIALISATION}))" org.eventb.core.prHyps="">
             <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
-                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2"/>
                 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
                     <org.eventb.core.prAnte name="'">
-                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
-                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
-                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
-                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="remove ¬ in ¬(∀a,b·¬(a∈ℕ∧b∈ℕ))" org.eventb.core.prHyps="">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
                             <org.eventb.core.prAnte name="'">
-                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
-                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12"/>
-                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="remove ¬ in ¬¬([[1]]∈ℕ∧[[0]]∈ℕ)" org.eventb.core.prHyps="">
-                                    <org.eventb.core.prAnte name="'">
-                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
-                                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p13"/>
-                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
-                                            <org.eventb.core.prAnte name="'">
-                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
-                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with Init(mch)=INITIALISATION" org.eventb.core.prHyps="p0">
-                                                    <org.eventb.core.prAnte name="'">
-                                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p16"/>
-                                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p17"/>
-                                                        <org.eventb.core.prHypAction name="FORWARD_INF2" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p18"/>
-                                                        <org.eventb.core.prHypAction name="FORWARD_INF3" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p19"/>
-                                                        <org.eventb.core.prHypAction name="DESELECT4" org.eventb.core.prHyps="p15,p2,p3,p4"/>
-                                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p0"/>
-                                                    </org.eventb.core.prAnte>
-                                                </org.eventb.core.prRule>
-                                            </org.eventb.core.prAnte>
-                                        </org.eventb.core.prRule>
-                                    </org.eventb.core.prAnte>
-                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1.3.2.2"/>
-                                </org.eventb.core.prRule>
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊥ hyp" org.eventb.core.prHyps="p11"/>
                             </org.eventb.core.prAnte>
-                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1.3.2"/>
                         </org.eventb.core.prRule>
                     </org.eventb.core.prAnte>
                 </org.eventb.core.prRule>
             </org.eventb.core.prAnte>
             <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
         </org.eventb.core.prRule>
-        <org.eventb.core.prIdent name="INITIALISATION" org.eventb.core.type="Ev"/>
-        <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(ℙ(ℤ×ℤ)×List(ℤ)×ℤ,Ev)"/>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="AP(mch)={var3p⦂ℙ(ℤ×ℤ),var2p⦂List(ℤ),var1p⦂ℤ·var1p=5∧var2p=(Nil ⦂ List(ℤ)) ∣ var3p ↦ var2p ↦ var1p}"/>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Thm(mch)=ℙ(ℤ × ℤ) × List(ℤ) × ℤ"/>
-        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="Ev={Init(mch),evt1,evt2}">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="BAP(mch)={e⦂Ev×(St×St)·⊤ ∣ e}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="Ordinary(mch)={Init(mch),evt1}">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Grd(mch)={e⦂Ev×St·⊤ ∣ e}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Inv(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·var1∈ℕ∧var2∈List(ℕ)∧{a⦂ℤ,b⦂ℤ·a∈ℕ∧b∈ℕ ∣ a ↦ a+b}≠(∅ ⦂ ℙ(ℤ×ℤ)) ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Inv(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·var1∈ℕ∧var2∈List(ℕ)∧¬(∀a⦂ℤ,b⦂ℤ·¬(a∈ℕ∧b∈ℕ)) ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Ev,{INITIALISATION},{evt1},{evt2})">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="mch∈Machine(St,Ev)">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬INITIALISATION=evt2">
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Ev,{INITIALISATION})">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="INITIALISATION" org.eventb.core.type="Ev"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Inv(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·var1∈ℕ∧var2∈List(ℕ)∧(∃a⦂ℤ,b⦂ℤ·a∈ℕ∧b∈ℕ) ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬Init(mch)=evt2">
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ev={INITIALISATION}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="INITIALISATION" org.eventb.core.type="Ev"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="mch∈Machine(ℙ(ℤ × ℤ) × List(ℤ) × ℤ,Ev)"/>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Ev={INITIALISATION,evt1,evt2}">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Convergent(mch)=(∅ ⦂ ℙ(Ev))">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Inv(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·var1∈ℕ∧var2∈List(ℕ)∧(∃a⦂ℤ,b⦂ℤ·¬¬(a∈ℕ∧b∈ℕ)) ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Ordinary(mch)={INITIALISATION,evt1}">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="Grd(mch)=Ev × St">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬evt1=evt2">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
-            <org.eventb.core.prIdent name="evt2" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Progress(mch)=(∅ ⦂ ℙ(Ev))">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="AP(mch)={var3p⦂ℙ(ℤ×ℤ),var2p⦂List(ℤ),var1p⦂ℤ·var1p=5∧var2p=(Nil ⦂ List(ℤ))∧⊤ ∣ var3p ↦ var2p ↦ var1p}"/>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="Thm(mch)={var3⦂ℙ(ℤ×ℤ),var2⦂List(ℤ),var1⦂ℤ·1=1 ∣ var3 ↦ var2 ↦ var1}"/>
-        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬Init(mch)=evt1">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="St=(∅ ⦂ ℙ(St))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BAP(mch)=Ev × (St × St)">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬INITIALISATION=evt1">
-            <org.eventb.core.prIdent name="evt1" org.eventb.core.type="Ev"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Convergent(mch)={}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Init(mch)=INITIALISATION"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Progress(mch)={}">
+            <org.eventb.core.prIdent name="Ev" org.eventb.core.type="ℙ(Ev)"/>
+            <org.eventb.core.prIdent name="mch" org.eventb.core.type="Machine(St,Ev)"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
-        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.heL2:1"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.rn"/>
-        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.falseHyp"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
     </org.eventb.core.prProof>
 </org.eventb.core.prFile>

@@ -5,5 +5,4 @@
         <org.eventb.theory.core.typeArgument name="(" org.eventb.theory.core.givenType="A"/>
     </org.eventb.theory.core.datatypeDefinition>
     <org.eventb.theory.core.typeParameter name="(" org.eventb.core.identifier="A"/>
-    <org.eventb.theory.core.datatypeDefinition name=")" org.eventb.core.identifier="test"/>
 </org.eventb.theory.core.theoryRoot>

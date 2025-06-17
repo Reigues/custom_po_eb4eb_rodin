@@ -17,7 +17,7 @@
     <org.eventb.core.axiom name="5" org.eventb.core.label="axm10" org.eventb.core.predicate="Thm(mch)={var3,var2,var1·1=1 ∣ var3 ↦ var2 ↦ var1}"/>
     <org.eventb.core.axiom name="6" org.eventb.core.label="axm11" org.eventb.core.predicate="Variant(mch)={var3,var2,var1,v·v=−var1 ∣ var3 ↦ var2 ↦ var1 ↦ v}"/>
     <org.eventb.core.axiom name="7" org.eventb.core.label="axm12" org.eventb.core.predicate="AP(mch)={var3p,var2p,var1p·var1p=5∧var2p=Nil∧⊤ ∣ var3p ↦ var2p ↦ var1p}"/>
-    <org.eventb.core.axiom name="8" org.eventb.core.label="axm13" org.eventb.core.predicate="Grd(mch)={e,var3,var2,var1·e=evt2∨e=evt1 ∣ e ↦ (var3 ↦ var2 ↦ var1)}"/>
-    <org.eventb.core.axiom name="9" org.eventb.core.label="axm14" org.eventb.core.predicate="BAP(mch)={e,var3,var2,var1,var3p,var2p,var1p·(e=evt2∧var3p=var3∧var2p=var2∧var1p=var1)∨(e=evt1∧var1p=8∧var3p=var3∧var2p=var2) ∣ e ↦ (var3 ↦ var2 ↦ var1 ↦ (var3p ↦ var2p ↦ var1p))}"/>
+    <org.eventb.core.axiom name="8" org.eventb.core.label="axm13" org.eventb.core.predicate="Grd(mch)={e,var3,var2,var1·e=evt1∨e=evt2 ∣ e ↦ (var3 ↦ var2 ↦ var1)}"/>
+    <org.eventb.core.axiom name="9" org.eventb.core.label="axm14" org.eventb.core.predicate="BAP(mch)={e,var3,var2,var1,var3p,var2p,var1p·(e=evt1∧(var1p=8∧var3p=var3∧var2p=var2))∨(e=evt2∧(var3p=var3∧var2p=var2∧var1p=var1)) ∣ e ↦ (var3 ↦ var2 ↦ var1 ↦ (var3p ↦ var2p ↦ var1p))}"/>
     <org.eventb.core.axiom name=":" org.eventb.core.label="axm15" org.eventb.core.predicate="check_Machine_Consistency(mch)" org.eventb.core.theorem="true"/>
 </org.eventb.core.contextFile>

@@ -4,7 +4,7 @@
     <org.eventb.core.psStatus name="rewConsistency/WD-S/rhs1" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="rewConsistency/S/rhs1" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="rewMCH/WD-S/rhs1" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
-    <org.eventb.core.psStatus name="rewMCH/S/rhs1" org.eventb.core.confidence="1000" org.eventb.core.contextDependent="true" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="rewMCH/S/rhs1" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="rewWCons/WD-S/rhs1" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="rewWCons/S/rhs1" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
     <org.eventb.core.psStatus name="rewBAPWC/WD-S/rhs1" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>

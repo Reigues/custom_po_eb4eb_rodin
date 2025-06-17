@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0"/>
     <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/NewProject/empty.bpo|org.eventb.core.poFile#empty|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
     <org.eventb.core.poPredicateSet name="EVTALLHYP'" org.eventb.core.parentSet="/NewProject/empty.bpo|org.eventb.core.poFile#empty|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>

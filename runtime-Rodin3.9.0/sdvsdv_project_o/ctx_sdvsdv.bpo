@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="Ev" org.eventb.core.type="ℙ(Ev)"/>
         <org.eventb.core.poIdentifier name="evt2" org.eventb.core.type="Ev"/>
         <org.eventb.core.poIdentifier name="evt1" org.eventb.core.type="Ev"/>
         <org.eventb.core.poIdentifier name="INITIALISATION" org.eventb.core.type="Ev"/>
         <org.eventb.core.poIdentifier name="mch" org.eventb.core.type="Machine(ℙ(ℤ×ℤ)×List(ℤ)×ℤ,Ev)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/sdvsdv_project_o/ctx_sdvsdv.bpo|org.eventb.core.poFile#ctx_sdvsdv|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/sdvsdv_project_o/ctx_sdvsdv.bpo|org.eventb.core.poFile#ctx_sdvsdv|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Ev,{INITIALISATION},{evt1},{evt2})" org.eventb.core.source="/sdvsdv_project_o/ctx_sdvsdv.buc|org.eventb.core.contextFile#ctx_sdvsdv|org.eventb.core.axiom#,"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="mch∈Machine(ℙ(ℤ × ℤ) × List(ℤ) × ℤ,Ev)" org.eventb.core.source="/sdvsdv_project_o/ctx_sdvsdv.buc|org.eventb.core.contextFile#ctx_sdvsdv|org.eventb.core.axiom#-"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="State(mch)=ℙ(ℤ × ℤ) × List(ℤ) × ℤ" org.eventb.core.source="/sdvsdv_project_o/ctx_sdvsdv.buc|org.eventb.core.contextFile#ctx_sdvsdv|org.eventb.core.axiom#."/>
