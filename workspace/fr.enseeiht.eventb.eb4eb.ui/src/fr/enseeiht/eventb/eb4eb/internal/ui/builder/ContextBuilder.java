@@ -8,7 +8,7 @@ import org.eventb.core.IContextRoot;
 import org.eventb.core.ast.Predicate;
 import org.rodinp.core.RodinDBException;
 
-public abstract class ContextBuilder implements IContextBuilder {
+public abstract class ContextBuilder implements IBuilder {
 	
 	private IContextRoot root;
 	private IProgressMonitor pMonitor;

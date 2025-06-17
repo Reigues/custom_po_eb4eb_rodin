@@ -32,7 +32,7 @@ import org.eventb.theory.core.DatabaseUtilitiesTheoryPath;
 import org.eventb.theory.core.ITheoryPathRoot;
 
 import fr.enseeiht.eventb.eb4eb.internal.ui.EB4EBUIUtils;
-import fr.enseeiht.eventb.eb4eb.internal.ui.MachineRootAcceptor;
+import fr.enseeiht.eventb.eb4eb.internal.ui.acceptor.MachineRootAcceptor;
 import fr.enseeiht.eventb.eb4eb.internal.ui.builder.EB4EBContextBuilder;
 import fr.enseeiht.eventb.eb4eb.internal.ui.generator.TheoryPathGenerator;
 import fr.enseeiht.eventb.eb4eb.internal.ui.visitor.EB4EBStructurGeneratorVisitor;
@@ -182,7 +182,7 @@ public class NewEB4EBContextWizard extends Wizard implements INewWizard {
 //				new EB4EBStructureGenerator((IContextRoot) rodinRoot)
 //						.generateEB4EBStructure(mch, pMonitor);
 				EB4EBContextBuilder b = new EB4EBContextBuilder((IContextRoot) rodinRoot, pMonitor);
-				new MachineRootAcceptor(mch).accept(new EB4EBStructurGeneratorVisitor(), b);
+				new MachineRootAcceptor<EB4EBContextBuilder>(mch).accept(new EB4EBStructurGeneratorVisitor(), b);
 				b.build();
 				rodinFile.save(null, true);
 			}

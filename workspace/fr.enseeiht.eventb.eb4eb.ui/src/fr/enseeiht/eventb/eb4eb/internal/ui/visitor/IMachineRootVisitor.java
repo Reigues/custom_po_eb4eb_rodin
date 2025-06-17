@@ -7,9 +7,9 @@ import org.eventb.core.ISCMachineRoot;
 import org.eventb.core.ISCVariable;
 import org.eventb.core.ISCVariant;
 
-import fr.enseeiht.eventb.eb4eb.internal.ui.builder.IContextBuilder;
+import fr.enseeiht.eventb.eb4eb.internal.ui.builder.IBuilder;
 
-public interface IMachineRootVisitor<Builder extends IContextBuilder> {
+public interface IMachineRootVisitor<Builder extends IBuilder> extends IVisitor<Builder> {
 	
 	public void visitMachineRoot(Builder builder, ISCMachineRoot machineRoot) throws CoreException;
 
